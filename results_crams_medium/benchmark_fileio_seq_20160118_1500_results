@@ -1,0 +1,86 @@
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+128 files, 163840Kb each, 20480Mb total
+Creating files for the test...
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 1
+
+Extra file open flags: 0
+128 files, 160Mb each
+20Gb total file size
+Block size 16Kb
+Periodic FSYNC enabled, calling fsync() each 100 requests.
+Calling fsync() at the end of test, Enabled.
+Using synchronous I/O mode
+Doing sequential write (creation) test
+Threads started!
+Time limit exceeded, exiting...
+Done.
+
+Operations performed:  0 Read, 1045399 Write, 0 Other = 1045399 Total
+Read 0b  Written 15.952Gb  Total transferred 15.952Gb  (54.448Mb/sec)
+ 3484.65 Requests/sec executed
+
+Test execution summary:
+    total time:                          300.0013s
+    total number of events:              1045399
+    total time taken by event execution: 297.0949
+    per-request statistics:
+         min:                                  0.02ms
+         avg:                                  0.28ms
+         max:                               7480.42ms
+         approx.  95 percentile:               0.08ms
+
+Threads fairness:
+    events (avg/stddev):           1045399.0000/0.00
+    execution time (avg/stddev):   297.0949/0.00
+
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+128 files, 163840Kb each, 20480Mb total
+Creating files for the test...
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+128 files, 163840Kb each, 20480Mb total
+Creating files for the test...
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 1
+
+Extra file open flags: 0
+128 files, 160Mb each
+20Gb total file size
+Block size 16Kb
+Periodic FSYNC enabled, calling fsync() each 100 requests.
+Calling fsync() at the end of test, Enabled.
+Using synchronous I/O mode
+Doing sequential read test
+Threads started!
+WARNING: Operation time (0.000000) is less than minimal counted value, counting as 1.000000
+WARNING: Percentile statistics will be inaccurate
+Done.
+
+Operations performed:  1310720 Read, 0 Write, 0 Other = 1310720 Total
+Read 20Gb  Written 0b  Total transferred 20Gb  (78.294Mb/sec)
+ 5010.80 Requests/sec executed
+
+Test execution summary:
+    total time:                          261.5792s
+    total number of events:              1310720
+    total time taken by event execution: 260.3084
+    per-request statistics:
+         min:                                  0.01ms
+         avg:                                  0.20ms
+         max:                                149.62ms
+         approx.  95 percentile:               0.71ms
+
+Threads fairness:
+    events (avg/stddev):           1310720.0000/0.00
+    execution time (avg/stddev):   260.3084/0.00
+
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Removing test files...
