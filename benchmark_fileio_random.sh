@@ -1,6 +1,6 @@
 #!/bin/sh
 now=`date +'%Y%m%d_%H%M'`
-filename="benchmark_fileio_${now}_results"
+filename="benchmark_fileio_random_${now}_results"
 
 echo "Running benchmarks and writing results to ${filename}"
 
