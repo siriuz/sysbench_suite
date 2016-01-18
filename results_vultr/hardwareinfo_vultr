@@ -1,0 +1,172 @@
+vetx-vultr
+    description: Computer
+    product: Standard PC (i440FX + PIIX, 1996) ()
+    vendor: QEMU
+    version: pc-i440fx-2.3
+    width: 64 bits
+    capabilities: smbios-2.8 dmi-2.8 vsyscall32
+    configuration: boot=normal uuid=8D055B12-E968-9145-A83C-F5D18E4401E7
+  *-core
+       description: Motherboard
+       physical id: 0
+     *-firmware
+          description: BIOS
+          vendor: SeaBIOS
+          physical id: 0
+          version: rel-1.8.1-0-g4adadbd-20150316_085822-nilsson.home.kraxel.org
+          date: 04/01/2014
+          size: 96KiB
+     *-cpu
+          description: CPU
+          product: Virtual CPU e7da7129d3ee
+          vendor: Intel Corp.
+          physical id: 400
+          bus info: cpu@0
+          version: pc-i440fx-2.3
+          slot: CPU 0
+          size: 2GHz
+          capacity: 2GHz
+          width: 64 bits
+          capabilities: fpu fpu_exception wp de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx rdtscp x86-64 constant_tsc rep_good nopl pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx rdrand hypervisor lahf_lm fsgsbase bmi1 avx2 smep bmi2 erms invpcid
+          configuration: cores=16 enabledcores=16 threads=2
+     *-memory
+          description: System Memory
+          physical id: 1000
+          size: 768MiB
+          capacity: 768MiB
+        *-bank
+             description: DIMM RAM
+             vendor: QEMU
+             physical id: 0
+             slot: DIMM 0
+             size: 768MiB
+     *-pci
+          description: Host bridge
+          product: 440FX - 82441FX PMC [Natoma]
+          vendor: Intel Corporation
+          physical id: 100
+          bus info: pci@0000:00:00.0
+          version: 02
+          width: 32 bits
+          clock: 33MHz
+        *-isa
+             description: ISA bridge
+             product: 82371SB PIIX3 ISA [Natoma/Triton II]
+             vendor: Intel Corporation
+             physical id: 1
+             bus info: pci@0000:00:01.0
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: isa
+             configuration: latency=0
+        *-ide
+             description: IDE interface
+             product: 82371SB PIIX3 IDE [Natoma/Triton II]
+             vendor: Intel Corporation
+             physical id: 1.1
+             bus info: pci@0000:00:01.1
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: ide bus_master
+             configuration: driver=ata_piix latency=0
+             resources: irq:0 ioport:1f0(size=8) ioport:3f6 ioport:170(size=8) ioport:376 ioport:c0c0(size=16)
+        *-usb
+             description: USB controller
+             product: 82371SB PIIX3 USB [Natoma/Triton II]
+             vendor: Intel Corporation
+             physical id: 1.2
+             bus info: pci@0000:00:01.2
+             version: 01
+             width: 32 bits
+             clock: 33MHz
+             capabilities: uhci bus_master
+             configuration: driver=uhci_hcd latency=0
+             resources: irq:11 ioport:c040(size=32)
+        *-bridge
+             description: Bridge
+             product: 82371AB/EB/MB PIIX4 ACPI
+             vendor: Intel Corporation
+             physical id: 1.3
+             bus info: pci@0000:00:01.3
+             version: 03
+             width: 32 bits
+             clock: 33MHz
+             capabilities: bridge
+             configuration: driver=piix4_smbus latency=0
+             resources: irq:9
+        *-display UNCLAIMED
+             description: VGA compatible controller
+             product: SVGA II Adapter
+             vendor: VMware
+             physical id: 2
+             bus info: pci@0000:00:02.0
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: vga_controller
+             configuration: latency=64
+             resources: ioport:c0d0(size=16) memory:fd000000-fdffffff memory:fe000000-fe00ffff memory:febd0000-febdffff
+        *-network
+             description: Ethernet interface
+             product: Virtio network device
+             vendor: Red Hat, Inc
+             physical id: 3
+             bus info: pci@0000:00:03.0
+             logical name: eth0
+             version: 00
+             serial: 56:00:00:0e:0d:1d
+             width: 32 bits
+             clock: 33MHz
+             capabilities: msix bus_master cap_list rom ethernet physical
+             configuration: broadcast=yes driver=virtio_net driverversion=1.0.0 ip=45.32.249.40 latency=0 link=yes multicast=yes
+             resources: irq:10 ioport:c060(size=32) memory:febf0000-febf0fff memory:febe0000-febeffff
+        *-scsi
+             description: SCSI storage controller
+             product: Virtio block device
+             vendor: Red Hat, Inc
+             physical id: 4
+             bus info: pci@0000:00:04.0
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: scsi msix bus_master cap_list
+             configuration: driver=virtio-pci latency=0
+             resources: irq:11 ioport:c000(size=64) memory:febf1000-febf1fff
+        *-generic:0
+             description: Unclassified device
+             product: Virtio memory balloon
+             vendor: Red Hat, Inc
+             physical id: 5
+             bus info: pci@0000:00:05.0
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: bus_master
+             configuration: driver=virtio-pci latency=0
+             resources: irq:10 ioport:c080(size=32)
+        *-generic:1
+             description: Unclassified device
+             product: Virtio RNG
+             vendor: Red Hat, Inc
+             physical id: 6
+             bus info: pci@0000:00:06.0
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: bus_master
+             configuration: driver=virtio-pci latency=0
+             resources: irq:11 ioport:c0a0(size=32)
+     *-scsi
+          physical id: 1
+          logical name: scsi1
+          capabilities: emulated
+        *-cdrom
+             description: DVD reader
+             physical id: 0.0.0
+             bus info: scsi@1:0.0.0
+             logical name: /dev/cdrom
+             logical name: /dev/sr0
+             capabilities: audio dvd
+             configuration: status=nodisc
