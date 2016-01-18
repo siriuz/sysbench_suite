@@ -2,7 +2,7 @@
 now=`date +'%Y%m%d_%H%M'`
 filename="benchmark_cpumem_${now}_results"
 
-print "Running benchmarks and writing results to ${filename}"
+echo "Running benchmarks and writing results to ${filename}"
 
 sysbench --test=cpu --cpu-max-prime=20000 run >> ${filename}
 sysbench --test=cpu --cpu-max-prime=20000 --num-threads=2 run >> ${filename}
