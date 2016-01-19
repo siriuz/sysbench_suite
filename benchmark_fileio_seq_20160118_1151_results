@@ -1,0 +1,84 @@
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+128 files, 163840Kb each, 20480Mb total
+Creating files for the test...
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 1
+
+Extra file open flags: 0
+128 files, 160Mb each
+20Gb total file size
+Block size 16Kb
+Periodic FSYNC enabled, calling fsync() each 100 requests.
+Calling fsync() at the end of test, Enabled.
+Using synchronous I/O mode
+Doing sequential write (creation) test
+Threads started!
+Time limit exceeded, exiting...
+Done.
+
+Operations performed:  0 Read, 665795 Write, 0 Other = 665795 Total
+Read 0b  Written 10.159Gb  Total transferred 10.159Gb  (34.677Mb/sec)
+ 2219.31 Requests/sec executed
+
+Test execution summary:
+    total time:                          300.0006s
+    total number of events:              665795
+    total time taken by event execution: 298.7890
+    per-request statistics:
+         min:                                  0.01ms
+         avg:                                  0.45ms
+         max:                               3312.82ms
+         approx.  95 percentile:               0.03ms
+
+Threads fairness:
+    events (avg/stddev):           665795.0000/0.00
+    execution time (avg/stddev):   298.7890/0.00
+
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Removing test files...
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+128 files, 163840Kb each, 20480Mb total
+Creating files for the test...
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 1
+
+Extra file open flags: 0
+128 files, 160Mb each
+20Gb total file size
+Block size 16Kb
+Periodic FSYNC enabled, calling fsync() each 100 requests.
+Calling fsync() at the end of test, Enabled.
+Using synchronous I/O mode
+Doing sequential read test
+Threads started!
+Time limit exceeded, exiting...
+Done.
+
+Operations performed:  147303 Read, 0 Write, 0 Other = 147303 Total
+Read 2.2477Gb  Written 0b  Total transferred 2.2477Gb  (7.6718Mb/sec)
+  490.99 Requests/sec executed
+
+Test execution summary:
+    total time:                          300.0097s
+    total number of events:              147303
+    total time taken by event execution: 299.9317
+    per-request statistics:
+         min:                                  0.00ms
+         avg:                                  2.04ms
+         max:                                 60.68ms
+         approx.  95 percentile:              16.25ms
+
+Threads fairness:
+    events (avg/stddev):           147303.0000/0.00
+    execution time (avg/stddev):   299.9317/0.00
+
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Removing test files...
